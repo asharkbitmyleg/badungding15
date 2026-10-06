@@ -1,0 +1,15 @@
+@media (max-width: 850px) {
+  .nav-links.open {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    min-width: 190px;
+    padding: 8px;
+    background: #101010;
+    border: 1px solid var(--line);
+  }
+}

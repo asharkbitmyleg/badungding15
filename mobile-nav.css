@@ -34,6 +34,12 @@ img {
   animation: archive-reveal 700ms ease-out;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .card:nth-child(2),
 .event:nth-child(2) {
   animation-delay: 100ms;

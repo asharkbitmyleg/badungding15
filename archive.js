@@ -4,6 +4,17 @@ document.querySelectorAll(".nav").forEach((nav) => {
 
   if (!menu || !links) return;
 
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/index.html";
+  const currentPage = currentPath.split("/").pop();
+
+  links.querySelectorAll("a").forEach((link) => {
+    const linkPath = new URL(link.href).pathname.replace(/\/$/, "");
+    if (linkPath.split("/").pop() === currentPage) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+
   const closeMenu = () => {
     menu.setAttribute("aria-expanded", "false");
     links.classList.remove("open");

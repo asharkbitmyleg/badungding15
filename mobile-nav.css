@@ -27,8 +27,11 @@ button:focus-visible {
 }
 
 .about-highlight {
+  display: block;
   color: var(--gold2);
   font-weight: 600;
+  font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+  overflow-wrap: anywhere;
 }
 
 .contact-actions {
